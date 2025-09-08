@@ -16,4 +16,9 @@ public sealed partial class CureHollowed : EntityEffect
         entityManager.RemoveComponent<AbsorbedComponent>(args.TargetEntity);
         entityManager.RemoveComponent<UnrevivableComponent>(args.TargetEntity);
     }
+
+    protected override string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
+    {
+        return Loc.GetString("reagent-effect-guidebook-cure-hollowed");
+    }
 }

@@ -467,3 +467,9 @@ reagent-effect-guidebook-add-to-chemicals =
         [1] to
         *[-1] from
     } the solution
+
+reagent-effect-guidebook-cure-hollowed =
+    { $chance ->
+        [1] Fixes
+        *[other] Fixes
+    } a body being hollowed
