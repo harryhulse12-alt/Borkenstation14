@@ -1,6 +1,7 @@
 using Content.Shared.EntityEffects;
 using Robust.Shared.Prototypes;
 using Content.Goobstation.Common.Changeling;
+using Content.Shared.Traits.Assorted;
 
 namespace Content.Server.EntityEffects.Effects;
 
