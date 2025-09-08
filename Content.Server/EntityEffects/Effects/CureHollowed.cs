@@ -6,7 +6,6 @@ namespace Content.Server.EntityEffects.Effects;
 
 public sealed partial class CureHollowed : EntityEffect
 {
-    [DataField]
 
     public override void Effect(EntityEffectBaseArgs args)
     {
