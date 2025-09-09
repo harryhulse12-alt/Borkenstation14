@@ -468,7 +468,7 @@ reagent-effect-guidebook-add-to-chemicals =
         *[-1] from
     } the solution
 
-reagent-effect-guidebook-cure-hollowed =
+reagent-effect-guidebook-cure-hollowed = #OMU addition
     { $chance ->
         [1] Fixes
         *[other] Fixes
