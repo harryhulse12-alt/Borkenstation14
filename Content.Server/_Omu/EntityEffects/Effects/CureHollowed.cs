@@ -11,11 +11,11 @@ public sealed partial class CureHollowed : EntityEffect
     public override void Effect(EntityEffectBaseArgs args)
     {
         var entityManager = args.EntityManager;
-        if (entityManager.HasComponent<AbsorbedComponent>(args.TargetEntity))
+        if (TryComp<AbsorbedComponent>(args.TargetEntity))
             return;
 
-        Remcomp<AbsorbedComponent>(args.TargetEntity);
-        Remcomp<UnrevivableComponent>(args.TargetEntity);
+        RemComp<AbsorbedComponent>(args.TargetEntity);
+        RemComp<UnrevivableComponent>(args.TargetEntity);
     }
 
     protected override string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
