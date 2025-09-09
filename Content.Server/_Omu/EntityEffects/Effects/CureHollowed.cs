@@ -3,7 +3,7 @@ using Robust.Shared.Prototypes;
 using Content.Goobstation.Common.Changeling;
 using Content.Shared.Traits.Assorted;
 
-namespace Content.Server.EntityEffects.Effects;
+namespace Content.Server._Omu.EntityEffects.Effects;
 
 public sealed partial class CureHollowed : EntityEffect
 {
