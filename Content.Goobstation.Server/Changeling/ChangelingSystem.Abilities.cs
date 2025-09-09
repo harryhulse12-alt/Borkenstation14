@@ -190,7 +190,7 @@ public sealed partial class ChangelingSystem
         var dmg = new DamageSpecifier(_proto.Index(AbsorbedDamageGroup), 170); //OMU change, damage lowered to 170 from 200
         _damage.TryChangeDamage(target, dmg, true, false, targetPart: TargetBodyPart.All); // Shitmed Change
 
-        if (!TryComp<BloodstreamComponent>(target, out var _blood)) //OMU change, reads initial blood type (if they have one)
+        if (!TryComp<BloodstreamComponent>(target, out _blood)) //OMU change, reads initial blood type (if they have one)
             return;
         _blood.ChangeBloodReagent(target, "FerrochromicAcid");
         _blood.SpillAllSolutions(target);
